@@ -1,6 +1,6 @@
 %define name nlog
 %define version 1.0
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: Logging library for Mono
 Name: %{name}
