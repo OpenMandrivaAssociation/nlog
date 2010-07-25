@@ -52,7 +52,7 @@ rm -rf %{buildroot}
 
 %package devel
 Summary: Development files for %{name}
-Group: Development/mono
+Group: Development/Other
 Requires: %{name} = %{version}-%{release}
 
 %description devel
