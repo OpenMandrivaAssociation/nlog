@@ -1,0 +1,21 @@
+diff -p -up NLog-1.0/NLog.build~ NLog-1.0/NLog.build
+--- NLog-1.0/NLog.build~	2006-09-12 11:03:54.000000000 +0200
++++ NLog-1.0/NLog.build	2009-02-20 14:04:54.000000000 +0100
+@@ -661,7 +661,7 @@
+         <property name="nlog.define" value="${nlog.define};MONO;MONO_1_0" />
+     </target>
+     <target name="configure-mono-2.0">
+-        <property name="nlog.define" value="${nlog.define};MONO;MONO_2_0;NET_2_API" />
++        <property name="nlog.define" value="${nlog.define};MONO;MONO_2_0;NET_2_API;DOTNET_2_0" />
+         <property name="nlog.csc.args" value="/nowarn:1591,1699" />
+     </target>
+ 
+@@ -721,7 +721,7 @@
+                 </namespaces>
+             </xmlpoke>
+ 
+-            <exec program="${path::combine(framework::get-framework-directory(framework::get-target-framework()),'al')}"
++            <exec program="/usr/bin/al"
+                 commandline="/nologo /link:Policy.${nlog.version.major}.${nlog.version.minor}.NLog.xml /out:Policy.${nlog.version.major}.${nlog.version.minor}.NLog.dll /keyfile:${path::combine(project::get-base-directory(),'src/NLog.snk')} /version:1.0.0.0"
+                 workingdir="${nlog.dir}" />
+         </if>
