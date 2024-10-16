@@ -12,7 +12,7 @@ Source1: nlog.pc
 Patch: nlog-1.0-fix-build.patch
 License: BSD
 Group: System/Libraries
-Url:  http://www.nlog-project.org/
+Url:  https://www.nlog-project.org/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: nant
 BuildRequires: dos2unix
